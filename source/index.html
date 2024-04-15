@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP Автосервиз</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="../source/images/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="../source/images/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../source/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../source/images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../source/images/icons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../source/images/icons/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../source/images/icons/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="/source/images/logo.png" alt="Logo" style="max-width: 140px;" loading="lazy">
+            </a>
+        </div>
+        <div class="nav-links">
+            <span><a href="#about-us">За нас</a></span>
+            <span><a href="#services">Услуги</a></span>
+            <span><a href="#gallery">Галерия</a></span>
+            <span class="nav-links_contacts"><a href="#contacts">Контакти</a></span>
+        </div>
+    </header>
+    <main>
+        <section class="heading">
+            <div class="heading-title">
+                <h1>Автосервиз SP Auto</h1>
+                <p>Професионална грижа за вашия автомобил</p>
+            </div>
+        </section>
+        <section id="about-us">
+            <div class="about-us">
+                <div class="about-us-title">
+                    <h2>За нас</h2>
+                </div>
+                <div class="section-content">
+                    <p>Добре дошли в <span class="company-name">SP Auto</span>, където съчетаваме автомобилна експертиза
+                        с изключително обслужване.</p>
+                    <p>С ангажимента си към удовлетворението на клиентите, нашите опитни механици предоставят висококачествени
+                        решения за всички нужди на вашия автомобил.</p>
+                    <p>От рутинна поддръжка до сложни ремонти, изживейте разликата с нас.</p>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div class="services">
+                <div class="services-title">
+                    <h2>Нашите услуги</h2>
+                </div>
+                <div class="section-content services-content">
+                    <div class="column">
+                        <div class="column-row">
+                            <div class="element element-image">
+                                <img src="images/svg/car-lifter.svg" alt="Service Image" class="services-media">
+                            </div>
+                            <div class="service-column-info">
+                                <div class="element-title">
+                                    Рутинна поддръжка
+                                </div>
+                                <span>Основни услуги като смяна на масло, проверка на течности и смяна на свещи, за
+                                    поддържане на плавната работа на превозното средство.</span>
+                            </div>
+                        </div>
+                        <div class="column-row">
+                            <div class="element element-image">
+                                <img src="images/svg/brakes.svg" alt="Service Image" class="services-media">
+                            </div>
+                            <div class="service-column-info">
+                                <div class="element-title">
+                                    Ремонт на спирачна система
+                                </div>
+                                <span>Поддръжка и ремонти на спирачната система, включително смяна на накладките,
+                                    измиване на течността и обработка на дисковете.</span>
+                            </div>
+                        </div>
+                        <div class="column-row">
+                            <div class="element element-image">
+                                <img src="images/svg/engine-motor.svg" alt="Service Image" class="services-media">
+                            </div>
+                            <div class="service-column-info">
+                                <div class="element-title">
+                                    Ремонт на ДВГ
+                                </div>
+                                <span>Диагностика и ремонт на двигателната система. Смяна на детайли като глави, бутала
+                                    и греди.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="column-row">
+                            <div class="element element-image">
+                                <img src="images/svg/chip-tuning.svg" alt="Service Image" class="services-media">
+                            </div>
+                            <div class="service-column-info">
+                                <div class="element-title">
+                                    Софтуерно настройване и подобрения
+                                </div>
+                                <span>Специализирани услуги за оптимизиране и подобряване на производителността на
+                                    превозното средство чрез софтуерни корекции.</span>
+                            </div>
+                        </div>
+                        <div class="column-row">
+                            <div class="element element-image">
+                                <img src="images/svg/suspension.svg" alt="Service Image" class="services-media">
+                            </div>
+                            <div class="service-column-info">
+                                <div class="element-title">
+                                    Ремонт на окачване
+                                </div>
+                                <span>Ремонти и смяна на компоненти като амортисьори, стабилизатори, тампони и
+                                    щанги.</span>
+                            </div>
+                        </div>
+                        <div class="column-row">
+                            <div class="element element-image">
+                                <img src="images/svg/gears.svg" alt="Service Image" class="services-media">
+                            </div>
+                            <div class="service-column-info">
+                                <div class="element-title">
+                                    Ремонт на скоростни кутии
+                                </div>
+                                <span>Услуги за поддръжка и ремонт на скоростната кутия, включително смяна на течността
+                                    и диагностика.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="gallery">
+                <div class="gallery-title">
+                    <h2>Галерия</h2>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/swiper/swiper1.jpg" alt="Image 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/swiper/swiper2.jpg" alt="Image 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/swiper/swiper3.jpg" alt="Image 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/swiper/swiper4.jpg" alt="Image 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/swiper/swiper5.jpg" alt="Image 4">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiper-nav"></div>
+                    <div class="swiper-button-prev swiper-nav"></div>
+                </div>
+        </section>
+        <section id="contacts">
+            <div class="contacts">
+                <div class="contacts-title">
+                    <h2>Контакти</h2>
+                </div>
+                <div id="map"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-contacts">
+            <span><span class="company-name">Телефон: </span>0889760064</span>
+            <span><span class="company-name">email: </span> <a
+                    href="mailto:spauto@gmail.com">spauto@gmail.com</a></span>
+        </div>
+        <p>&copy; 2024 <span class="company-name">SP Auto</span></p>
+        <div class="footer-location company-name"><a href="https://maps.app.goo.gl/modC6BNUzBZcD59S6"
+                target="_blank">Локация</a></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
