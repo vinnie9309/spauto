@@ -28,7 +28,9 @@ h6,
 p {
   margin-bottom: 10px;
 }
-
+.logo-image {
+  max-width: 140px;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -297,6 +299,20 @@ footer {
 @media screen and (max-width: 767px) {
   .nav-links {
     display: none;
+    position: absolute;
+    flex-direction: column;
+    background: white;
+    right: 0;
+    padding: 1em;
+    top: 68.7px;
+    width: 175px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    align-items: flex-start;
+    gap: .8em;
+  }
+  .logo-image {
+    max-width: 100px;
   }
   body {
     font-size: 14px;
@@ -352,6 +368,7 @@ footer {
 
   header {
     justify-content: space-between;
+    background: white;
   }
   .heading-title {
     font-size: 2em;
