@@ -5,10 +5,8 @@ let menu = document.querySelector(".burger-menu");
 window.addEventListener("scroll", function () {
   if (window.scrollY > 400 && window.innerWidth > 768) {
     header.style.backgroundColor = "rgba(255, 255, 255, 1)";
-    nav.style.backgroundColor = "rgba(255, 255, 255, 1)";
   } else {
     header.style.backgroundColor = "";
-    nav.style.backgroundColor = "";
   }
 });
 let swiper = new Swiper(".mySwiper", {
@@ -36,9 +34,11 @@ function toggleMenu() {
   menu.classList.toggle("menu-active");
   nav.style.display = nav.style.display === "flex" ? "none" : "flex";
 }
-document.addEventListener("click", function (e) {
-  if (!e.target.classList.contains("line") && !e.target.classList.contains("burger-menu")) {
-    nav.style.display = "none";
-    menu.classList.remove("menu-active");
-  }
-});
+if(window.innerWidth < 768) {
+  document.addEventListener("click", function (e) {
+    if (!e.target.classList.contains("line") && !e.target.classList.contains("burger-menu")) {
+      nav.style.display = "none";
+      menu.classList.remove("menu-active");
+    }
+  });
+}
