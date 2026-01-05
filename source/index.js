@@ -26,7 +26,7 @@ if (dropdown && dropdownLink) {
     if (!dropdown.contains(e.target)) {
       console.log('a')
       dropdown.classList.remove("open");
-      dropdownMenu.classList.remove("show")
+      dropdownMenu.classList.remove("show");
     }
   });
 }
